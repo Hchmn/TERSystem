@@ -21,6 +21,7 @@
             <a href="settings" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border text-xl font-sans md:font-serif text-black-100 font-black">Settings</a>
             <a href="/" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border text-xl font-sans md:font-serif text-black-100 font-black" onclick=" return confirm('Are You sure you want to logout?')">Logout</a>
         </div>
+        
         <div class="w-full h-full bg-gradient-to-r from-blue-500 to-sky-300 px-4 py-3">
             <div class="w-full h-64 bg-white py-5 px-3 rounded-lg">
                 <div class="w-auto h-auto px-5 py-3 text-lg ont-sans md:font-serif font-black">
@@ -49,7 +50,7 @@
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Hella Gay Avenido</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Computer Programming 1</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">
-                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 disabled:border-blue-400 px-2 border border-blue-500 rounded disabled:bg-blue-400" disabled>Edit</button>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 disabled:border-blue-400 px-2 border border-blue-500 rounded disabled:bg-blue-400" disabled>Evaluate</button>
                                 </td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell"> 
                                     <p class="bg-green-500 w-auto px-1 py-2 rounded-lg text-white w-24 text-center">Done</p>
@@ -61,7 +62,7 @@
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Eddie Bouy B. Palad</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Social Legal and Professional Issues in Computing</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">
-                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 px-2 border border-blue-500 rounded">Edit</button>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 px-2 border border-blue-500 rounded">Evaluate</button>
                                 </td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell"> 
                                     <p class="bg-red-500 w-auto px-1 py-2 rounded-lg text-white w-24">Ongoing</p>
@@ -74,7 +75,7 @@
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Paul B. Bokingkito Jr.</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">Data Visualization Techniques</td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell">
-                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 px-2 border border-blue-500 rounded">Edit</button>
+                                    <button class="bg-blue-600 hover:bg-blue-700 text-xl text-white font-bold py-1 px-2 border border-blue-500 rounded">Evaluate</button>
                                 </td>
                                 <td class="p-2 md:border md:border-grey-500 text-xl text-left block md:table-cell"> 
                                     <p class="bg-red-500 w-auto px-1 py-2 rounded-lg text-white w-24">Ongoing</p>
