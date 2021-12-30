@@ -10,16 +10,16 @@
 
 <body class="h-full w-full">
     <div class ="flex h-full">
-        <div class="container w-80 h-auto border">
-            <div class="w-full h-auto  px-1  border border-gray">
+        <div class="container w-80 h-auto border-2">
+            <div class="w-full h-auto  px-1  border-2">
                 <img src="images/teacher_image.jpg" alt="" class="px-2 mt-3 py-3  rounded-full ">
                 <p class="mt-2 text-center text-xl font-sans md:font-serif text-center text-black-100 hover:text-sky-400 font-black block">Mr. Nasrollah L. Gandamato</p>
                 <p class="mt-1 mb-2 text-center text-lg font-sans md:font-serif text-center text-black-100 hover:text-sky-400 font-black block">(2014-0001)</p>
             </div>
-            <a href="teacher_dashboard" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border text-xl font-sans md:font-serif text-black-100 font-black" >Evaluate</a>
-            <a href="teacher_analytics" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border text-xl font-sans md:font-serif text-black-100 font-black" >Analytics</a>          
-            <a href="teacher_settings" class="flex  w-full h-auto  bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border text-xl font-sans md:font-serif text-black-100 font-black" href="settings">Settings</a>
-            <a href="/" class="flex  w-full h-auto  bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 text-xl font-sans md:font-serif text-black-100 font-black" onclick=" return confirm('Are You sure you want to logout?')">Logout</a>
+            <a href="teacher_dashboard" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border-2 text-xl font-sans md:font-serif text-black-100 font-black" >Evaluate</a>
+            <a href="teacher_analytics" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border-2 text-xl font-sans md:font-serif text-black-100 font-black" >Analytics</a>          
+            <a href="teacher_settings" class="flex  w-full h-auto  bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border-2 text-xl font-sans md:font-serif text-black-100 font-black" href="settings">Settings</a>
+            <a href="/" class="flex  w-full h-auto  bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border-2 text-xl font-sans md:font-serif text-black-100 font-black" onclick=" return confirm('Are You sure you want to logout?')">Logout</a>
         </div>
 
         <div class="w-full h-full bg-gradient-to-r from-blue-500 to-sky-300 px-4 py-3"> 
