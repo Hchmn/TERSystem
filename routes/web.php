@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
+
+use App\Http\Controllers\Auth\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,11 +18,14 @@ use App\Http\Controllers\Home;
 Route::get('/', function () {
     return view('login');
 });
+
 Route::view('teacher_login','teacher_login');
-Route::view('dashboard', "student_dashboard/dashboard");
+// Route::view('dashboard', ["student_dashboard/dashboard"]);
+// Route::view('dashboard', ["student_dashboard/dashboard"]);
 Route::view('settings',"student_dashboard/settings");
 
 Route::view('teacher_analytics', "teacher_dashboard/analytics");
 Route::view('teacher_dashboard', "teacher_dashboard/dashboard");
 Route::view('teacher_settings', "teacher_dashboard/settings");
-Route::post('login',[Home::class,'CheckInputField']);
+Route::post('login', [Home::class,'CheckInputField']);
+

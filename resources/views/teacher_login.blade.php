@@ -10,9 +10,10 @@
     
     <div class="md:container md:mx-auto place-content-center h-full   opacity-100 w-1/4 h-full flex items-center justify-center"  style="">
 
-            <form action="/login" method="POST" class=" py-5 px-5 h-auto w-auto rounded-lg border-4">
+            <form action="post-login" method="POST" class=" py-5 px-5 h-auto w-auto rounded-lg border-4">
               @csrf
-            <h1 class=" block w-full text-3xl	 font-sans md:font-serif text-center text-white mb-5 font-black mt-5">Teacher's Efficiency Rating  (Teachers)</h1>
+            <h1 class=" block w-full text-3xl font-sans md:font-serif text-center text-white mb-5 font-black mt-5">Teacher's Efficiency Rating  (Teachers)</h1>
+                <input type="hidden" value = "1" name="type">
                 <label for="username" name="" class="block w-full text-2xl font-sans md:font-serif text-center text-white font-black" > USERNAME</label>
                 <input class="mt-3 py-2 px-3 w-full block text-xl text-center font-sans md:font-serif hover:outline-none focus:outline-none focus:ring-4 focus:ring-black rounded-md" type="text" name="username" placeholder="Input School ID (2018-2197)">
                 @if($errors->get('username'))

@@ -15,7 +15,20 @@
             <div class="w-full h-auto  px-1  border-2">
                 <img src="images/Profile_image.jpg" alt="" class="px-2 mt-3 py-3  rounded-full ">
             
-                <p class="mt-2 text-center text-xl font-sans md:font-serif text-center text-black-100 hover:text-sky-400 font-black block">Nasrollah L. Gandamato</p>
+                <p class="mt-2 text-center text-xl font-sans md:font-serif text-center text-black-100 hover:text-sky-400 font-black block">
+                    @if(Session::has('FN'))
+                        {{Session::get('FN')}}
+                    @endif
+
+                    @if(Session::has('MI'))
+                        {{Session::get('MI')}}.
+                    @endif
+
+                    @if(Session::has('LN'))
+                        {{Session::get('LN')}}
+                    @endif
+                </p>
+                
                 <p class="mt-1 mb-2 text-center text-lg font-sans md:font-serif text-center text-black-100 hover:text-sky-400 font-black block">(2018-2197)</p>
             </div>
             <a href="dashboard" class="flex  w-full h-auto bg-blue-500 hover:bg-sky-300 px-2 py-2 hover:text-blue-100 border-2 text-xl font-sans md:font-serif text-black-100 font-black">Evaluate</a>
