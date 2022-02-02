@@ -15,19 +15,31 @@ class Home extends Controller
             //creating if/else statement if the user who logged is teacher or student
 
             if($req->input("type") == "1"){
-                echo("Teacher here");
+            
                 $teacher_data = array('USERNAME' => $req->get('username'),
                                    'PASSWORD' => $req->get('password'));
                 $users = DB::table('teacher')
-                        ->where('USERNAME','LIKE', $teacher_data['USERNAME'])
-                        ->where('PASSWORD','LIKE', $teacher_data['USERNAME'])
-                        ->get();
+                        ->where('USERNAME','like', $teacher_data['USERNAME'])
+                        ->where('PASSWORD','like', $teacher_data['PASSWORD'])
+                        ->first();
 
+
+                
                 if($users){
-                    echo("Logged in");
+                    $account_details = ['FN' => $users->FN,
+                                        'MI' => $users->MI,
+                                        'LN' => $users->LN,
+                                        'Dept_ID' => $users->DEPT_ID,
+                                        'status' => $users->IS_ACTIVE
+                                    ];
+                    $acc_details = session($account_details);
+                    return redirect('teacher_dashboard');                
                 }
+
                 else{
-                    echo("Wrong account details");
+                    $error_message = ['error_message' => 'Invalid Account Name Or Password'];
+                    $error = session($error_message);
+                    return redirect('teacher_login');
                 }
             }
 
@@ -69,5 +81,13 @@ class Home extends Controller
         }
         
 
+    }
+
+    public function LoginMenu(){
+        return view ('login');
+    }
+
+    public function TeacherLoginMenu(){
+        return view ('teacher_login');
     }
 }

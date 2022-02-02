@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
-
+use App\Http\Controllers\Student;
+use App\Http\Controllers\Teacher;
 use App\Http\Controllers\Auth\AuthController;
 /*
 |--------------------------------------------------------------------------
@@ -15,17 +16,22 @@ use App\Http\Controllers\Auth\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('login');
+// });
 
-Route::view('teacher_login','teacher_login');
-// Route::view('dashboard', ["student_dashboard/dashboard"]);
-// Route::view('dashboard', ["student_dashboard/dashboard"]);
-Route::view('settings',"student_dashboard/settings");
+// Route::view('teacher_login','teacher_login');
 
-Route::view('teacher_analytics', "teacher_dashboard/analytics");
-Route::view('teacher_dashboard', "teacher_dashboard/dashboard");
-Route::view('teacher_settings', "teacher_dashboard/settings");
+
+//STUDENT ROUTES
+Route::get('/', [Home::class, 'LoginMenu']);
+Route::get('dashboard', [Student::class,'Dashboard']);
+Route::get('settings', [Student::class,'Settings']);
+
+//TEACHER ROUTES
+Route::get('teacher_login', [Home::class, 'TeacherLoginMenu']);
+Route::get('teacher_dashboard', [Teacher::class,'Teacher_Dashboard']);
+Route::get('teacher_settings', [Teacher::class,'Teacher_Settings']);
+Route::get('teacher_analytics', [Teacher::class, 'Teacher_Analytics']);
 Route::post('login', [Home::class,'CheckInputField']);
 
